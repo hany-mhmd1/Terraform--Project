@@ -1,0 +1,4 @@
+# Compatible with Python 3.7 (Amazon Linux 2)
+Flask==2.2.5
+Werkzeug==2.2.3
+gunicorn==21.2.0
