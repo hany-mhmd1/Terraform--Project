@@ -1,4 +1,9 @@
 #   Terraform Project 
+
+**Author:** Hany Mohamed Shalaby Elshafey
+**Track:** System Administration
+**Project:** AWS Reverse Proxy Infrastructure
+
 #  AWS Reverse Proxy Infrastructure — Terraform Deployment
 
 This project provisions a robust AWS environment using Terraform modules, featuring Nginx reverse proxies, Flask backend services, and Application Load Balancers (ALB).
@@ -41,7 +46,7 @@ Before deploying, ensure you have:
 
 ## Quick Deployment Guide
 
-### Step 1 — Setup Remote Backend
+### Step one : Setup Remote Backend
 
 Create S3 and DynamoDB resources for Terraform state management:
 
@@ -55,7 +60,7 @@ aws dynamodb create-table   --table-name terraform-state-lock   --attribute-defi
 
 ---
 
-### Step 2 — Configure Variables
+### Step two : Configure Variables
 
 Open and update `terraform.tfvars` with your own values:
 
@@ -70,7 +75,7 @@ Required updates:
 
 ---
 
-### Step 3 — Initialize Workspace
+### Step three : Initialize Workspace
 
 ```bash
 terraform init
@@ -80,7 +85,7 @@ terraform workspace select dev
 
 ---
 
-### Step 4 — Deploy the Infrastructure
+### Step four : Deploy the Infrastructure
 
 ```bash
 terraform plan
@@ -231,6 +236,4 @@ terraform workspace delete dev
 
 ---
 
-**Author:** Hany Mohamed Shalaby Elshafey
-
-**Project:** AWS Reverse Proxy Infrastructure 
+ 
